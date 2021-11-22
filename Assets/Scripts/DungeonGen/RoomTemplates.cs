@@ -10,6 +10,7 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] lRooms;
     public GameObject[] rRooms;
     public GameObject[] resetRooms;
+    public GameObject[] enemySpawner;
 
     public GameObject closedRoom;
     public GameObject entryRoom;
@@ -34,6 +35,7 @@ public class RoomTemplates : MonoBehaviour
                 {
                     Instantiate(boss, rooms[i].transform.position, Quaternion.identity);
                     spawnedBoss = true;
+                    AddEnemies();
                 }
             }
         }
@@ -41,6 +43,8 @@ public class RoomTemplates : MonoBehaviour
         {
             bossWaitTime -= Time.deltaTime;
         }
+
+        #region roomSize
 
         if (roomWaitTime <= 0 && smol == false)
         {
@@ -88,4 +92,14 @@ public class RoomTemplates : MonoBehaviour
         smol = false;
     }
 
+    #endregion
+
+    public void AddEnemies()
+    {
+        enemySpawner = GameObject.FindGameObjectsWithTag("EnemySpawner");
+        for (int i = 0; i < enemySpawner.Length; i++)
+        {
+            enemySpawner[i].GetComponent<EnemySpawner>().Spawn();
+        }
+    }
 }
