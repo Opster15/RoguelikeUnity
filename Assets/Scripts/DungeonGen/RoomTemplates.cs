@@ -5,10 +5,14 @@ using UnityEngine;
 public class RoomTemplates : MonoBehaviour
 {
 
-    public GameObject[] bRooms;
-    public GameObject[] tRooms;
-    public GameObject[] lRooms;
-    public GameObject[] rRooms;
+    public GameObject[] allBRooms;
+    public GameObject[] allTRooms;
+    public GameObject[] allLRooms;
+    public GameObject[] allRRooms;
+    public GameObject[] singleBRooms;
+    public GameObject[] singleTRooms;
+    public GameObject[] singleLRooms;
+    public GameObject[] singleRRooms;
     public GameObject[] resetRooms;
     public GameObject[] enemySpawner;
 

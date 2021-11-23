@@ -18,8 +18,9 @@ public class RoomSpawner : MonoBehaviour
     {
         templates = FindObjectOfType<RoomTemplates>();
         Invoke("Spawn", 0.05f);
-        Destroy(gameObject, 15f);
+        Destroy(gameObject, 8f);
     }
+
 
     void Spawn()
     {
@@ -27,27 +28,26 @@ public class RoomSpawner : MonoBehaviour
         {
             if (openingDirection == 1)
             {
-                random = Random.Range(0, templates.bRooms.Length);
-                Instantiate(templates.bRooms[random], transform.position, Quaternion.identity);
+                random = Random.Range(0, templates.allBRooms.Length);
+                Instantiate(templates.allBRooms[random], transform.position, Quaternion.identity);
             }
             else if (openingDirection == 2)
             {
-                random = Random.Range(0, templates.tRooms.Length);
-                Instantiate(templates.tRooms[random], transform.position, Quaternion.identity);
+                random = Random.Range(0, templates.allTRooms.Length);
+                Instantiate(templates.allTRooms[random], transform.position, Quaternion.identity);
             }
             else if (openingDirection == 3)
             {
-                random = Random.Range(0, templates.lRooms.Length);
-                Instantiate(templates.lRooms[random], transform.position, Quaternion.identity);
+                random = Random.Range(0, templates.allLRooms.Length);
+                Instantiate(templates.allLRooms[random], transform.position, Quaternion.identity);
             }
             else if (openingDirection == 4)
             {
-                random = Random.Range(0, templates.rRooms.Length);
-                Instantiate(templates.rRooms[random], transform.position, Quaternion.identity);
+                random = Random.Range(0, templates.allRRooms.Length);
+                Instantiate(templates.allRRooms[random], transform.position, Quaternion.identity);
             }
-            spawned = true;
+            spawned = true; 
         }
-
     }
 
     private void OnTriggerEnter(Collider other)
