@@ -15,4 +15,5 @@ MonoBehaviour:
   damage: 20
   range: 0.7
   timeBewtweenAttacks: 1
-  weaponPrefab: {fileID: 148790, guid: 92cd70a481699ac4b93380dc1184f864, type: 3}
+  weaponPrefab: {fileID: 6577753433687679572, guid: 380f3b0f8bee784489da967996950be4,
+    type: 3}

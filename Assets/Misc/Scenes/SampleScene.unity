@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.7
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.12093767, g: 0.15112434, b: 0.20847791, a: 0.7}
+  m_IndirectSpecularColor: {r: 0.12093789, g: 0.15112475, b: 0.20847832, a: 0.7}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -149,7 +149,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 343379137}
-  - {fileID: 1291168798}
   m_Father: {fileID: 1039739158}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -532,6 +531,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
+  - {fileID: 1291168798}
   m_Father: {fileID: 1039739158}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -815,6 +815,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6199156864152528685, guid: 232d5e97c360d2b4281e14441ea217f8,
+        type: 3}
+      propertyPath: allLRooms.Array.data[5]
+      value: 
+      objectReference: {fileID: 1943172054082273776, guid: 6039f7cf620144e4db1c4d66a4750f20,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 232d5e97c360d2b4281e14441ea217f8, type: 3}
 --- !u!1 &963194225
@@ -1198,11 +1204,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291168797}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.25, z: 0.75}
+  m_LocalPosition: {x: 0.6, y: -0.55, z: 0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1877029591}
-  m_Father: {fileID: 333603433}
+  m_Father: {fileID: 798801696}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1449087207
