@@ -9,10 +9,6 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] allTRooms;
     public GameObject[] allLRooms;
     public GameObject[] allRRooms;
-    public GameObject[] singleBRooms;
-    public GameObject[] singleTRooms;
-    public GameObject[] singleLRooms;
-    public GameObject[] singleRRooms;
     public GameObject[] resetRooms;
     public GameObject[] enemySpawner;
 
