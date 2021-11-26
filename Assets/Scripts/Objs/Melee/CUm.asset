@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e9679692ab6d3a498d6b9b09e4cdee7, type: 3}
-  m_Name: BaseAxe
+  m_Name: CUm
   m_EditorClassIdentifier: 
-  damage: 25
-  range: 0.7
-  timeBewtweenAttacks: 1
+  damage: 69
+  range: 69
+  timeBewtweenAttacks: 69
   weaponPrefab: {fileID: 5126381141774991994, guid: e920654e46363d64289dad3d25e764fd,
     type: 3}
