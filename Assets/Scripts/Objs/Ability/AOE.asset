@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3612061e5d5389440aba8210214390e8, type: 3}
+  m_Name: AOE
+  m_EditorClassIdentifier: 
+  name: FireBlast
+  cooldownTime: 2
+  activeTime: 0.5
+  attackRadius: 5
+  attackForce: 500
+  damage: 50
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 512
+  effect: {fileID: 148992, guid: ae9992e09911c2b42b78d684d5dc5b2c, type: 3}

@@ -28,7 +28,7 @@ public class EnemyMeleeAI : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(currentState);
+        //Debug.Log(currentState);
         switch (currentState)
         {
             case State.Idle:
@@ -82,13 +82,14 @@ public class EnemyMeleeAI : MonoBehaviour
     private void UpdateMovingState()
     {
         float distance = Vector3.Distance(target.position, transform.position);
-        if (distance <= lookRadius)
+        if (distance >= lookRadius)
         {
             SwitchState(State.Idle);
             currentState = State.Idle;
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed);
+        transform.position = Vector3.Lerp(transform.position, target.position, Time.deltaTime * speed);
+        //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed);
     }
 
     private void ExitMovingState()
