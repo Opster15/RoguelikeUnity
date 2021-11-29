@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 1163422146901314877}
   - component: {fileID: 1163422146901314866}
   - component: {fileID: 1163422146901314879}
+  - component: {fileID: 3246224080395919170}
   m_Layer: 11
   m_Name: Player
   m_TagString: Untagged
@@ -264,6 +265,35 @@ MonoBehaviour:
   counterMovement: 0.175
   maxSlopeAngle: 90
   jumpForce: 130
+--- !u!114 &3246224080395919170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163422146901314872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abecb321959aaad45896af0b198163ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilities:
+  - {fileID: 11400000, guid: 665d07ddc915cd14db20bd22056b701f, type: 2}
+  - {fileID: 11400000, guid: c7e41aef577e1a14e87238dd365aa66a, type: 2}
+  - {fileID: 11400000, guid: 58dcb69eeaa8c1843ac947c03394e5bd, type: 2}
+  - {fileID: 11400000, guid: 2c90bdc094e1e6e4383513d16431dbe5, type: 2}
+  ui: {fileID: 0}
+  cooldownTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  activeTime:
+  - 0
+  - 0
+  - 0
+  - 0
+  keys: 43010000440100006500000071000000
 --- !u!1 &1163422147197377333
 GameObject:
   m_ObjectHideFlags: 0
